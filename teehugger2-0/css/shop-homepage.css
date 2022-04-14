@@ -1,0 +1,128 @@
+/* Header style */
+
+nav {
+	font-family: "Quicksand";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: transparent;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+	outline: 0;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: #343a40!important;
+	border: none;
+}
+
+.dropdown-menu li {
+	margin-left: 2em;
+	font-family:"Quicksand";
+   	font-size:16px
+}
+
+.dropdown-menu li a {
+	color: #FFFFFF!important;
+}
+
+.dropdown-menu > li > a:hover {
+	background color: #708090;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Global type styles */
+
+h1 {
+	font-family: "Quicksand";
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 24px;
+	color: #808080;
+}
+
+h2 {
+	margin-top: 3em;
+    margin-bottom: 2em;
+    font-family: "Quicksand";
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 24px;
+	color: #808080;
+}
+
+h4 {
+font-family: "Quicksand";
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 24px;
+	color: #DAA520;
+}
+
+p {
+	font-family: "Quicksand";
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+
+body {
+  padding-top: 65px;
+    /* was padding-top: 54px; */
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+/* About Page style
+.
+.
+.
+/*
+
+
+/* Contact Page style
+.
+.
+.
+*/
+
+
+/* FAQ Page style
+.
+.
+.
+/*
+
+
+/* Home Page style */
+
+.carousel-homepage { 	
+	margin-top: 16px;
+}
+    
+
+

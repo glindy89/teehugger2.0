@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="storeWebApp">
+   <head>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <!-- Meta-information -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Teehugger Tees">
+      <meta name="author" content="Teehugger Tees">
+      <meta name="facebook-domain-verification" content="7njiflnr3fnvphv82fyln78c2o9vtv" />
+      <meta property="og:url" content=location.href />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content=document.title />
+      <meta property="og:description" content=document.title />
+      <meta property="og:image" content="https://teehuggers.com/summit-2020-lab/imgs/teehugger-nav-logo-new.png" />
+      <meta property="fb:app_id" content="232684780094970" />
+      <!-- Data layer value storage -->
+      <meta name="pagename" content="{{pagename}}">
+      <meta name="pagetype" content="{{pagetype}}">
+      <meta name="sitesection" content="{{sitesection}}">
+      <meta name="sitesubsection" content="{{sitesubsection}}">
+      <meta name="category" content="{{category}}">
+      <meta name="productid" content="{{productid}}">
+      <meta name="productname" content="{{productname}}">
+      <meta name="revenue" content="{{revenue}}">
+      <meta name="producttotalrevenue" content="{{producttotalrevenue}}">
+      <meta name="producttotalunits" content="{{producttotalunits}}">
+      <meta name="purchaseID" content="{{purchaseID}}">
+      <title>Shop TEEhuggers</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles -->
+      <link href="css/shop-homepage.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <!-- Angular, followed by custom JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+      <!-- Data Layer -->
+      <script>
+         digitalData = { 
+         	page:{
+         		pageName: document.pagename,
+         		destinationURL: encodeURIComponent(window.location.href),
+         		pageType: document.pagetype, 
+         		siteSection: document.sitesection,
+         		siteSubsection: document.sitesubsection,
+         		category: document.category,
+         		productID: document.productid,
+         		productName: document.productname,
+         		revenue: document.revenue,
+         			
+         		productTotalUnits: document.producttotalunits,
+         		purchaseID: "",
+         	
+         	}
+         };
+      </script>
+      <!-- Target pre-hiding snippet for async ** ALLOY SPECIFIC **  -->
+      <script>
+         !function(e,a,n,t){var i=e.head;if(i){
+         if (a) return;
+         var o=e.createElement("style");
+         o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+         (document, document.location.href.indexOf("mboxEdit") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
+      </script>
+      <!-- Alloy embed code -->
+      <script src="//assets.adobedtm.com/8c78ce860123/a263e207aa3a/launch-b5beec1a18a9-development.min.js" async></script>
+      <!-- Facebook Pixel Code -->
+      <script>
+         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+         document,'script','https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '3909773449129004'); // Insert your pixel ID here.
+         fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3909773449129004&ev=PageView&noscript=1"
+         /></noscript>
+      <!-- End Facebook Pixel Code -->
+      <!--cookie opt-in script-->
+      <script src="https://app.enzuzo.com/apps/enzuzo/static/js/__enzuzo-cookiebar.js?uuid=591d66e6-a3b9-11ec-b303-3fffd9726012"></script>
+   </head>
+   <body>
+      <!-- Website Content-->
+      <div ng-include="'templates/home-header.html'"></div>
+      <div id="app" ng-view ></div>
+      <div ng-include="'templates/home-footer.html'"></div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Our Website Javascripts -->
+      <script src="js/shop-main.js"></script>
+   </body>
+</html>
